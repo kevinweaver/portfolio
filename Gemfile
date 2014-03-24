@@ -8,7 +8,9 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'rspec-rails'
+gem 'capybara'
 group :development do
+  gem 'libnotify'
   gem 'guard-rspec'
 end
 group :doc do
