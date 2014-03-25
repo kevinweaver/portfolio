@@ -13,3 +13,7 @@
 
  *= require_tree .
  */
+
+html body{
+  background-image:url('stardust.png') 
+}

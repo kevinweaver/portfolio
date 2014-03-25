@@ -20,6 +20,5 @@ guard :rspec do
   # Turnip features and steps
   watch(%r{^spec/acceptance/(.+)\.feature$})
   watch(%r{^spec/acceptance/steps/(.+)_steps\.rb$})   { |m| Dir[File.join("**/#{m[1]}.feature")][0] || 'spec/acceptance' }
-  notification :libnotify, :timeout => .5, :transient => true, :append => false, :urgency => :low
+  notification :libnotify, :timeout => 1, :transient => true, :append => true
 end
-
